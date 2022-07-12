@@ -1,0 +1,115 @@
+*,::after,::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:"open sans",sans-serif;
+    font-size:0.8rem;
+    line-height:1.5;
+    background:white;
+}
+main{
+    /* width:100%; */
+    min-height:100vh;
+    display:grid;
+    place-items:center;
+
+}
+.title{
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    text-align:center;
+    margin-bottom:4rem;
+    /* color:#222; */
+}
+.underline{
+    height:0.25rem;
+    width:5rem;
+    background:rgb(192, 237, 255);
+    margin:auto auto;
+}
+.container{
+    width:80vw;
+    max-width:620px;
+}
+.describe{
+    background:#fff;
+    /* margin:5rem 7rem;  */
+    padding:0.7rem 1rem;
+    border-radius:0.25rem;
+    box-shadow:3px 10px 15px rgba(0,0,0,0.2);
+    transition:all 0.3s linear;
+    text-align:left;
+}
+.describe:hover{
+    box-shadow:3px 10px 15px rgba(0,0,0,0.2);
+}
+.img-container{
+    height:150px;
+    width:150px;
+    /* display:grid; */
+    border-radius:90%;
+    position:relative;
+    /* padding:1rem 3rem; */
+    margin:0 auto;
+    margin-bottom:1.5rem;
+    box-shadow: 3px 5px 10px rgba(0,0,0,0.2);
+}
+#movie-img{
+    height:100%;
+    width:100%;
+    display:block;
+    object-fit:cover;
+    position:relative;
+    border-radius:1.5rem;
+}
+
+.title-inside{
+    margin-bottom:0.8rem;
+    font-size:1rem;
+    font-weight:700;
+    text-align:center;
+}
+.name{
+    color:royalblue;
+}
+.date{
+    font-size: 1rem;
+    font-weight:500;
+    text-align:center;
+    margin-left: 3rem;
+}
+.release-date{
+    color:royalblue;
+}
+
+.story{
+    font-family: "open sans",sans-serif;
+    /* font-size:0.9rem; */
+    color:#222;
+    margin-bottom:2rem;
+}
+a{
+    text-decoration:none;
+    /* text-align:center; */
+    /* place-items:center; */
+    /* justify-content:space-between; */
+
+}
+
+.link{
+    color:orange;
+    padding:0.7rem 1rem;
+    border:2px solid black;
+    /* margin-top:1rem; */
+    background:transparent;
+    /* place-items:center; */
+    margin-right:3rem;
+    display:inline-block;
+    text-align:center;
+    box-shadow:3px 5px 10px rgba(0,0,0,0.2);
+}
+
+
+
+
