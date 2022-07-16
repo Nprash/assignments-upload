@@ -1,0 +1,220 @@
+
+
+*,::after,::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width:100%;
+    height: 100vh;
+    position: relative;
+    /* background-size: cover; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.head{
+    /* flex-direction: row; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90px;
+    box-sizing: border-box;
+    margin-top: -400px;
+    margin-bottom: 14px;
+    /* border-bottom: 2px solid lightgrey; */
+}
+.cheg-logo{
+    width: auto;
+    height: 45px;
+    margin-top: 40px;
+    margin-left: 100px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 10px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+li:hover{
+    border-bottom: 4px solid orange;
+}
+
+
+.nav-bar {
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    justify-content: space-around;
+    margin-top: 12px;
+
+}
+
+
+.search-bar{
+    position: relative;
+    width: 500px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    /* overflow: visible; */
+}
+
+
+input{
+    position: relative;
+    font-size: 18px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+input[type="text"]{
+    width: 340px;
+    height: 50px;
+    border: 2px solid orange;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+
+input[type="submit"]{
+    position: relative;
+    border-radius: 0 25px 25px 0;
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: orange;
+}
+
+
+.imagetext{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* align-items: flex-end; */
+    flex-direction: column;
+}
+
+.chegg-img{
+    position: absolute;
+    display: flex;
+    /* margin-top: 100px; */
+    /* margin: ; */
+    width:100%;
+    height:500px;
+}
+
+.text-part{
+    position: relative;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.btn{
+    position: relative;
+    border: 1px solid orange;
+    width: 140px;
+    background: orange;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:720px){
+    .head{
+        width: auto;
+        height: auto;
+        font-size: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+
+.cheg-logo{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    margin-left: auto;
+    display: flex;
+    padding: auto;
+}
+
+
+.search-bar{
+    width: auto;
+    height: 40px;
+    margin-left: auto;
+}
+
+input{
+    width: auto;
+    height: auto;
+}
+
+input[type="text"]{
+    width: auto;
+    margin-left: auto;
+}
+
+input[type="submit"]{
+    width: auto;
+    margin: auto;
+}
+
+.chegg-img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.nav-bar {
+    font-size: 18px;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 5px 8px;
+    justify-content: space-around;
+    margin-top: 12px;
+
+}
+
+}
