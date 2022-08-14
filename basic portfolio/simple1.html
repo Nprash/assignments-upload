@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS counter Application</title>
+    <link rel="stylesheet" href="sty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- <div class="container">
+        <h1>JS Counter Application</h1>
+        <h1 class="counter" id="counter">0</h1>
+        <button class="btn" onclick="increment()">increment</button>
+        <button class="btn" onclick="reset()">reset</button>
+        <button class="btn" onclick="decrement()">decrement</button> -->
+
+    <div class="block">
+        <!-- ---------------project 1 --------------- -->
+        <div class="container">
+            <p class="pro">Project-1</p>
+            <h4><a href="p2.html" class="btn11">Home</a></h4>
+            <h1>Js Counter Application</h1>
+            <h1 class="counter" id="counter">0</h1>
+            <button class="btn" onclick="decrement()">Decrement</button>
+            <button class="btn" onclick="reset()">Reset</button>
+            <button class="btn" onclick="increment()">Increment</button>
+        </div>
+
+<!--------------- project 2 ------------------>
+        <div class="container1">
+            <p class="pro">Project-2</p>
+            <h4><a href="p2.html" class="btn11">Home</a></h4>
+            <h1>counting numbers</h1>
+            <span id="value">0</span>
+            <button class="btnn decrease">decrease</button>
+            <button class="btnn reset">Reset</button>
+            <button class="btnn increase">increase</button>
+        </div>
+
+<!----------------------- project 3 ---------------------------->
+        <div class="container2" id="changecolorof">
+            <p class="pro">Project-3</p>
+            <h4><a href="projects.html" class="home">Color Flipper</a></h4>
+            <ul class="links">
+                <li><a href="projects.html">Simple</a></li>
+                <li><a href="hex1.html">Hex</a></li>
+            </ul>
+            <div class="back">
+                <h3>background color : <span class="color">white</span></h3>
+                <button class="btn btn-hero" id="btn" onclick="changecolor()">click me</button>
+            </div>
+        </div>
+<!-------------- project 4 -------------------------------->
+<div class="container3">
+    <p class="pro1">Project-4</p>
+    <div class="title">
+        <h2>Our Reviews</h2>
+        <div class="underline"></div>
+    </div>
+    <article class="review">
+        <div class="img-container">
+            <img src="person-1.jpeg" alt="image1" id="person-img">
+        </div>
+
+        <div class="content-flex">
+            <h4 id="author">Foreign Girl</h4>
+            <p id="job">Customer Sales Executive</p>
+            <p id="info">needs a strong logical code building,understand complex problems and communication
+                skills,
+                a fluient english both speaking and written is required.Have a good technical skills which
+                enables perform the task in a
+                very significant manner.
+            </p>
+        </div>
+
+        <div class="button-container">
+            <button class="prev-btn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+    </article>
+</div>
+
+
+
+    </div>
+    <script src="dom.js"></script>
+    <script src="simple1.js"></script>
+    <!-- <script>
+    const colors = ["#70D2D2","#C8C320","#D1D270","#DB98E6","#98DFE6"]
+    const background = document.getElementById('changecolorof');
+    const color = document.querySelector('.color');
+
+    function changecolor(){
+    let rand = getrandomno();
+    background.style.backgroundColor = colors[rand];
+    color.textContent = colors[rand];
+    // console.log(rand);
+
+    }
+    function getrandomno() {
+    return Math.floor(Math.random()*colors.length);
+    }
+
+    </script> -->
+
+</body>
+
+</html>
