@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family-poppins:200,300,400,500,600,700,800,900&display=swap');
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #2f363e;
+} */
+
+.container-c {
+    width: 200px;
+    position: relative;
+    background: #2f363e;
+    /* min-height: 500px; */
+    border-radius: 20px;
+    border-top-left-radius: 125px;
+    border-top-right-radius: 125px;
+    box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* this is for digital clock to set down on bottom of the container*/
+    /* top: -10px; */
+    margin-left: 100px;
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #2f363e;
+    border-radius: 50%;
+    box-shadow: 10px 50px 70px rgba(0, 0, 0, 0.25),
+        inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+        inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+        inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3px;
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    /* color:#fff; */
+    background: #2f363e;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    z-index: 100000;
+}
+
+.clock span {
+    position: absolute;
+    inset: 4px;
+    color: #fff;
+    text-align: center;
+    transform: rotate(calc(30deg * var(--i)));
+    /* 360deg/12 = 30deg to span the numbers  along with positions we give a --i */
+}
+
+.clock span b {
+    font-size: 1em;
+    opacity: 45%;
+    font-weight: 400;
+    display: inline-block;
+    transform: rotate(calc(-30deg * var(--i)));
+    /*clock nos gives correct orientation on the clock circle*/
+}
+
+.circle {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border: 1px solid #04fc43;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 10;
+    /* color: #04fc43; */
+}
+
+.circle i {
+    position: absolute;
+    width: 4px;
+    height: 50%;
+    background: var(--clr);
+    opacity: 0.75;
+    transform-origin: bottom;
+    transform: scaleY(0.5);
+}
+
+.circle:nth-child(1) i {
+    width: 2px;
+}
+
+.circle:nth-child(2) i {
+    width: 2px;
+}
+
+.circle2 {
+    width: 100px;
+    height: 100px;
+    z-index: 9;
+    border: 1px solid #fee800;
+}
+
+.circle3 {
+    width: 70px;
+    height: 70px;
+    z-index: 8;
+    border: 1px solid #ff2972;
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: var(--clr);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--clr), 0 0 60px var(--clr);
+}
+
+
+/* digtal clock */
+
+#time {
+    /* margin-bottom: 5px; */
+    display: flex;
+    padding: 5px;
+    font-size: 1em;
+    font-weight: 600;
+    border: 2px solid rgba(0, 0, 0, 0.5); 
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5),
+    inset 5px 5px 20px rgba(255,255,255,0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+#time div{
+    position: relative;
+    width: 45px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--clr);
+}
+
+#time div:nth-child(1)::after,
+#time div:nth-child(2)::after{
+    content: ':';
+    position: absolute;
+    right: -1px;
+}
+
+#time div:last-child{
+    font-size: 0.8em;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color: #fff;
+}
+
+#time div:nth-child(2)::after{
+    animation: animate 1s steps(1) infinite;
+}
+@keyframes animate{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
