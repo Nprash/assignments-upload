@@ -11,8 +11,8 @@
 body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-color: #00DBDE;
-    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    background-color: #D7E9F7;
+    
 
 
 }
@@ -83,12 +83,7 @@ section {
     /* height: 100vh; */
     /* background: #4f6d7a; */
     /* background: #649173; */
-    background-color: #00DBDE;
-    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
-
-
-
-
+    background: #D7E9F7;
     /* background-repeat: calc(100vh+100px); */
     font-family: 'Poppins', sans-serif;
     flex-wrap: wrap;
@@ -181,7 +176,7 @@ section {
 .container:hover::before {
     animation: effect;
     animation-duration: 1.5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 
 @keyframes effect {
@@ -293,7 +288,7 @@ section {
 .slide {
     margin: 0;
     display: flex;
-    background-color: #4f6d7a;
+    background-color: #D7E9F7;
     justify-content: center;
     height: 100vh;
     align-items: center;
@@ -345,8 +340,7 @@ section {
     display: flex;
     justify-content: space-around;
     width: 100vw;
-    background-color: #00DBDE;
-    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    background: #D7E9F7;
     font-family: 'Poppins', sans-serif;
     flex-wrap: wrap;
     padding: 20px 30px;
@@ -381,7 +375,7 @@ section {
 .project-container:hover::before {
     animation: effect;
     animation-duration: 1.5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
 }
 
 @keyframes effect {
