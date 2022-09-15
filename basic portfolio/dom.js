@@ -117,7 +117,7 @@ const reviews = [
         name: "prasanth-guitar",
         job: "front end developer-1",
         img:
-            "pr-bike-1.jpg",
+            "./gallery with/pr-bike-1.jpg",
         text:
             "Possess strong knowledge of  programming languages such as HTML/CSS, JavaScript."
 
@@ -127,7 +127,7 @@ const reviews = [
         name: "prasanth-nephew",
         job: "web designer-2",
         img:
-            "pr-nep-3.jpg",
+            "./gallery with/pr-nep-3.jpg",
         text:
             "Looking to gain a Web Designing position that can benefit from huge programming knowledge.",
     },
@@ -136,7 +136,7 @@ const reviews = [
         name: "prasanth-guitar2",
         job: "intern-3",
         img:
-            "pr-gitar-4.jpg",
+            "./gallery with/pr-gitar-4.jpg",
         text:
             "Looking for web developer internship. to enhance my coding skills without any hassels",
     },
@@ -145,7 +145,7 @@ const reviews = [
         name: "prasanth-guitar3",
         job: "the boss-4",
         img:
-            "pr-gitar-5.jpg",
+            "./gallery with/pr-gitar-5.jpg",
         text:
             "to enhance overall strategic plan and direction of an organization. ",
     },

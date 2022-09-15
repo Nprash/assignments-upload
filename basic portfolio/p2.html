@@ -100,6 +100,13 @@
 
 
     </div>
+    <script>
+        const navToggle = document.querySelector(".nav-toggle");
+        const links = document.querySelector(".links");
+        navToggle.addEventListener("click", function(){
+            links.classList.toggle('show-links');
+        });
+    </script>
     <script src="dom.js"></script>
     <script src="simple1.js"></script>
     <script src="hex1.js"></script>

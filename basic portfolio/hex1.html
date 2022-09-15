@@ -14,10 +14,18 @@
 
 <body>
     <nav>
-        <div class="nav-bar">
+        <div class="nav-center">
             <div class="nav-header">
-                <a href="index.html" class="portfolio-logo">My-Portfolio</a>
-                <ul class="links">
+                <a href="index.html">
+                    <img src="./gallery with/port-logo.png" class="logoimage" alt="">
+                </a>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- nav links  -->
+            <div class="links">
+                <ul>
                     <li> <a href="about-me.html"><i class="bi bi-file-earmark-person"></i> About Me</a></li>
                     <li><a href="resume.html"><i class="bi bi-file-word"></i> Resume</a></li>
                     <li><a href="skill-set.html"><i class="bi bi-stars"></i> Skill Set</a></li>
@@ -26,7 +34,33 @@
                     <li><a href="gallery.html"><i class="bi bi-images"></i> Gallery</a></li>
                 </ul>
             </div>
+            <!-- social media icons -->
+            <div class="social-icons">
+                <ul>
+                    <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://in.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
         </div>
+    </nav>
+
+    <nav class="nav1">
+        <aside class="side-bar">
+            <ul>
+                <li> <a href="about-me.html"><i class="bi bi-file-earmark-person"></i> About Me</a></li>
+                <li><a href="resume.html"><i class="bi bi-file-word"></i> Resume</a></li>
+                <li><a href="skill-set.html"><i class="bi bi-stars"></i> Skill Set</a></li>
+                <li><a href="projects.html"><i class="bi bi-briefcase"></i> Projects</a></li>
+                <li><a href="projects.html"><i class="bi bi-person-workspace"></i> Internships</a></li>
+                <li><a href="gallery.html"><i class="bi bi-images"></i> Gallery</a></li>
+            </ul>
+            <ul class="bottom-icons">
+                <li><a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://in.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </aside>
     </nav>
 
 
@@ -155,7 +189,13 @@
     </div>
 
 
-
+    <script>
+        const navToggle = document.querySelector(".nav-toggle");
+        const links = document.querySelector(".links");
+        navToggle.addEventListener("click", function(){
+            links.classList.toggle('show-links');
+        });
+    </script>
 
     <script src="dom.js"></script>
     <!-- <script src="simple1.js"></script> -->
