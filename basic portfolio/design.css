@@ -19,7 +19,7 @@ ul a {
 body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-color: #D7E9F7;
+    background-color: #f9f9f9;/*#D7E9F7*/
 }
 
 /* ============  Nav bar ==============*/
@@ -254,7 +254,154 @@ nav {
     
 }
 
+/* =========== Aboutme & index pagedesin ============ */
+.whole-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* overflow : hidden; */
+    /* bottom: -150px; */
 
+}
+
+
+.card-container {
+    position: relative;
+    top: 20px;
+    width: 720px;
+    /* height: 250px; */
+    display: flex;
+    justify-content: space-between;
+    /* place-items: center; */
+    align-items: center;
+    /* margin: 50px 315px; */
+    border: 1px solid lightgrey;
+    border-radius: 16px;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+.img-part {
+    width: 150px;
+    /* height: 200px; */
+}
+
+.user {
+    width: 100%;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.title1 {
+    margin: 20px;
+}
+
+
+.title2 {
+    text-align: left;
+    width: 300px;
+    margin: 20px;
+}
+
+.abouttext-card {
+    position: relative;
+    top: 40px;
+    width: 720px;
+    /* height: 250px; */
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    /* margin: 30px 315px; */
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    margin: 30px 0;
+
+}
+
+
+/* =============resume page =================== */
+
+.resume {
+    width: 100%;
+    height: 100vh;
+    background: #4f6d7a;
+}
+
+/* ================= Skill-set page ================== */
+
+.skills {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    /* place-items: center; */
+    align-items: center;
+    margin: 50px auto;
+    border: 1px solid lightgrey;
+    border-radius: 16px;
+}
+
+.card_container1 {
+    padding: 30px;
+}
+
+
+/*  ===================== gallery ============= */
+
+.slide {
+    position: relative;
+    margin: 0;
+    display: flex;
+    background-color: #f9f9f9; /*D7E9F7*/
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.slider {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+.img-container2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* transform: translateX(-500px); */
+    object-fit: cover;
+}
+
+.btns {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 20px;
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.btns.prev {
+    left: 10px;
+}
+
+.btns.next {
+    right: 10px;
+}
+
+.btns:hover {
+    opacity: 1;
+}
 
 /* ================== gallery cards has shifted fromm -> HOME-PAGE-cards =================*/
 
@@ -263,15 +410,16 @@ section {
     justify-content: space-around;
     place-items: center;
     width: 100vw;
+    position: relative;
     /* height: 100vh; */
-    /* background: #4f6d7a; */
-    /* background: #649173; */
     background: #D7E9F7;
-    /* background-repeat: calc(100vh+100px); */
+    /* clip-path: polygon(23% 0, 0 0, 0 45%, 0 68%, 0 100%, 29% 84%, 69% 79%, 100% 65%, 100% 41%, 100% 0, 74% 0, 45% 0); */
     font-family: 'Poppins', sans-serif;
     flex-wrap: wrap;
     padding: 20px 30px;
     box-sizing: border-box;
+    /* z-index: -1; */
+
 }
 
 .pic {
@@ -322,6 +470,8 @@ section {
     background: linear-gradient(50deg, #2a5a3b, #1e4886);
     overflow: hidden;
     margin: 30px;
+    /* z-index: -1; */
+
 }
 
 .container::before {
@@ -394,154 +544,6 @@ section {
 
 
 
-/* =========== About me desin ============ */
-.whole-section {
-    position: absolute;
-    left: 340px;
-    /* clip-path: polygon(50% 0%, 100% 0, 100% 60%, 65% 74%, 0 100%, 0% 60%, 0 0); */
-    /* padding: 30px; */
-    width: 54%;
-    height: 100vh;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    align-items: center;
-    /* overflow : hidden; */
-    bottom: -150px;
-
-}
-
-
-.card-container {
-    position: relative;
-    top: 20px;
-    width: 720px;
-    height: 250px;
-    display: flex;
-    justify-content: space-between;
-    /* place-items: center; */
-    align-items: center;
-    /* margin: 50px 315px; */
-    border: 1px solid lightgrey;
-    border-radius: 16px;
-}
-
-.img-part {
-    width: 150px;
-    /* height: 200px; */
-}
-
-.user {
-    width: 100%;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-.title1 {
-    margin: 20px;
-}
-
-
-.title2 {
-    text-align: left;
-    width: 300px;
-    margin: 20px;
-}
-
-.abouttext-card {
-    position: relative;
-    top: 40px;
-    width: 720px;
-    height: 250px;
-    display: flex;
-    text-align: left;
-    justify-content: center;
-    /* margin: 30px 315px; */
-    padding: 20px;
-    border: 1px solid lightgrey;
-    border-radius: 16px;
-    margin-bottom: 30px;
-    overflow: hidden;
-
-}
-
-
-/* =============resume page =================== */
-
-.resume {
-    width: 100%;
-    height: 100vh;
-    background: #4f6d7a;
-}
-
-/* ================= Skill-set page ================== */
-
-.skills {
-    width: 720px;
-    display: flex;
-    justify-content: space-between;
-    /* place-items: center; */
-    align-items: center;
-    margin: 50px auto;
-    border: 1px solid lightgrey;
-    border-radius: 16px;
-}
-
-.card_container1 {
-    padding: 30px;
-}
-
-
-/*  ===================== gallery ============= */
-
-.slide {
-    margin: 0;
-    display: flex;
-    background-color: #D7E9F7;
-    justify-content: center;
-    height: 100vh;
-    align-items: center;
-}
-
-.slider {
-    position: relative;
-    width: 500px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 16px;
-    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
-
-}
-
-.img-container2 {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    /* transform: translateX(-500px); */
-    object-fit: cover;
-}
-
-.btns {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    color: white;
-    font-size: 20px;
-    opacity: 50%;
-    cursor: pointer;
-}
-
-.btns.prev {
-    left: 10px;
-}
-
-.btns.next {
-    right: 10px;
-}
-
-.btns:hover {
-    opacity: 1;
-}
 
 /* ========== Projects == ===*/
 
@@ -549,7 +551,7 @@ section {
     display: flex;
     justify-content: space-around;
     width: 100vw;
-    background: #D7E9F7;
+    background: #f9f9f9; /*#D7E9F7*/
     font-family: 'Poppins', sans-serif;
     flex-wrap: wrap;
     padding: 20px 30px;
