@@ -20,8 +20,8 @@ function whileclick() {
     let prompt = document.getElementById('prompt1');
 
     if (task != "" && description != "") {
-        let newdata = collect.filter((w) => {
-            return w.taskname == task;
+        let newdata = collect.filter((checkname) => {
+            return checkname.taskname == task;
         })
         if (newdata.length == 0) {
             let keepdata = { taskname: task, taskdescription: description }
@@ -51,17 +51,6 @@ function whileclick() {
 
 
 
-            // let div = document.createElement('div');
-            // div.classList.add('parentclass');
-            // parentdiv.appendChild(div);
-            // let printtask = document.createElement('h3');
-            // let printdescription = document.createElement('p');
-            // // printtask.classList.add('colmn1').appendChild()
-            // div.appendChild(printtask);
-            // div.appendChild(printdescription);
-            // printtask.innerHTML = task;
-            // printdescription.innerHTML = description;
-
         }
         else {
             prompt.innerHTML = "The task name is already exist"
@@ -90,3 +79,14 @@ function whileclick() {
 
 
 
+
+            // let div = document.createElement('div');
+            // div.classList.add('parentclass');
+            // parentdiv.appendChild(div);
+            // let printtask = document.createElement('h3');
+            // let printdescription = document.createElement('p');
+            // // printtask.classList.add('colmn1').appendChild()
+            // div.appendChild(printtask);
+            // div.appendChild(printdescription);
+            // printtask.innerHTML = task;
+            // printdescription.innerHTML = description;
