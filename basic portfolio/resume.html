@@ -37,9 +37,11 @@
             <!-- social media icons -->
             <div class="social-icons">
                 <ul>
-                    <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/prasanth.nimmana" target="_blank"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" target="_parent"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                            target="_blank"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -55,19 +57,22 @@
                 <li><a href="projects.html"><i class="bi bi-person-workspace"></i> Internships</a></li>
                 <li><a href="gallery.html"><i class="bi bi-images"></i> Gallery</a></li>
             </ul>
-            <ul class="bottom-icons">
-                <li><a href="https://www.facebook.com"><i class="fab fa-facebook" target="_blank"></i></a></li>
-                <li><a href="https://www.twitter.com"><i class="fab fa-twitter" target="_blank"></i></a></li>
-                <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <ul>
+                <li><a href="https://www.facebook.com/prasanth.nimmana" target="_blank"><i
+                            class="fab fa-facebook"></i></a></li>
+                <li><a href="#" target="_parent"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                        target="_blank"><i class="fab fa-linkedin"></i></a></li>
             </ul>
         </aside>
     </nav>
 
-    <div class="getyoufile">
-        <a href="./Resume Build/Prasanth's--Resume.pdf" download >Download My Resume</a>
+
+    <div>
+        <embed src="./Resume Build/index.html" class="resume" />
     </div>
-    <div >
-        <embed src="./Resume Build/index.html" class="resume"/>
+    <div class="getresume">
+        <a href="./Resume Build/Prasanth's--Resume.pdf" class="resumebtn" download><span>Download</span></a>
     </div>
 
 
@@ -76,9 +81,25 @@
     <script>
         const navToggle = document.querySelector(".nav-toggle");
         const links = document.querySelector(".links");
-        navToggle.addEventListener("click", function(){
+        navToggle.addEventListener("click", function () {
             links.classList.toggle('show-links');
         });
+
+
+        // this code for button
+        // const resumeB = document.querySelector('.resumebtn');
+        // resumeB.addEventListener("mouseover", (event) => {
+            // const x = (resumeB.offsetLeft-event.pageX);
+            // const y = (resumeB.offsetTop-event.pageY);
+            // resumeB.style.setProperty("--xposition", x + "em");
+            // resumeB.style.setProperty("--yposition", y + "em");
+            // console.log(x, y);
+            // console.log(event.pageX)
+            // console.log(resumeB.offsetTop)
+        // });
+    </script>
+    <script>
+        
     </script>
 
 </body>
