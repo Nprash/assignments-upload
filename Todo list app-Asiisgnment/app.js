@@ -76,7 +76,7 @@ function whileclick() {
     document.getElementById('taskname').value = ""
     document.getElementById('taskdescription').value = ""
 }
-document.classList.remove(firstDiv);
+// document.classList.remove(firstDiv);
 
 
 
