@@ -67,22 +67,22 @@
     <section class="slide">
         <div class="slider">
             <div class="img-container2">
-                <img src="gallery/1.jpg" alt="image" style="width:500px; height:300px">
-                <img src="gallery/2.jpg" alt="image" style="width:500px; height:300px">
-                <img src="gallery/3.jpg" alt="image" style="width:500px; height:300px">
-                <img src="gallery/4.jpg" alt="image" style="width:500px; height:300px">
-                <img src="gallery/11.jpg" alt="image" style="width:500px; height:300px">
-                <img src="gallery/22.jpg" alt="image" style="width:500px; height:300px">
-                <img src="gallery/33.jpg" alt="image" style="width:500px; height:300px">
-                <img src="gallery/44.jpg" alt="image" style="width:500px; height:300px">
-                <img src="gallery/111.jpg" alt="image" style="width:500px; height:300px">
-                <img src="gallery/123.jpg" alt="image" style="width:500px; height:300px">
-                <img src="gallery/222.jpg" alt="image" style="width:500px; height:300px">
-                <img src="gallery/333.jpg" alt="image" style="width:500px; height:300px">
-                <img src="gallery/444.jpg" alt="image" style="width:500px; height:300px">
-                <img src="gallery/1122.jpg" alt="image" style="width:500px; height:300px">
-                <img src="gallery/22113.jpg" alt="image" style="width:500px; height:300px">
-                <img src="gallery/332211.jpg" alt="image" style="width:500px; height:300px">
+                <!-- <img src="gallery/1.jpg" alt="imag"> -->
+                <img src="gallery/2.jpg" alt="image">
+                <img src="gallery/3.jpg" alt="image">
+                <img src="gallery/4.jpg" alt="image">
+                <img src="gallery/11.jpg" alt="image">
+                <img src="gallery/22.jpg" alt="image">
+                <img src="gallery/33.jpg" alt="image">
+                <img src="gallery/44.jpg" alt="image">
+                <img src="gallery/111.jpg" alt="image">
+                <img src="gallery/123.jpg" alt="image">
+                <img src="gallery/222.jpg" alt="image">
+                <img src="gallery/333.jpg" alt="image">
+                <img src="gallery/444.jpg" alt="image">
+                <img src="gallery/1122.jpg" alt="image">
+                <img src="gallery/22113.jpg" alt="image">
+                <img src="gallery/332211.jpg" alt="image">
             </div>
             <i class="fa-solid fa-angles-left btns prev"></i>
             <i class="fa-solid fa-angles-right btns next"></i>
@@ -197,7 +197,7 @@
         const imageContainerE1 = document.querySelector(".img-container2");
 
 
-        let currentImg = 1
+        let currentImg = 1;
 
 
         let timeout;
@@ -211,14 +211,14 @@
 
         prevE1.addEventListener("click", () => {
 
-            currentImg--
+            currentImg--;
             clearTimeout(timeout);
-            updateImg()
+            updateImg();
 
 
         });
 
-        updateImg()
+        updateImg();
         function updateImg() {
             if (currentImg > imgsE1.length) {
                 currentImg = 1;
@@ -226,12 +226,14 @@
             else if (currentImg < 1) {
                 currentImg = imgsE1.length;
             }
-            imageContainerE1.style.transform = `translateX(-${(currentImg - 1) * 500}px`;
+            else{
+                imageContainerE1.style.transform = `translateX(-${(currentImg - 1) * 500}px)`;
+            }
 
 
             timeout = setTimeout(() => {
                 currentImg++
-                updateImg()
+                updateImg();
             }, 3000)
 
         }
