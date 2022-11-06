@@ -8,12 +8,16 @@
     <title>Basic Portfolio</title>
     <link rel="stylesheet" href="design.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="shortcut icon" href="./my_Portfolio_favicon/1024.png" type="image/x-icon">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="clock/styling.css">
 </head>
 
 <body>
-    <nav>
+    <!-- <nav>
         <div class="nav-center">
             <div class="nav-header">
                 <a href="index.html">
@@ -23,7 +27,7 @@
                     <i class="fas fa-bars"></i>
                 </button>
             </div>
-            <!-- nav links  -->
+            
             <div class="links">
                 <ul>
                     <li> <a href="about-me.html"><i class="bi bi-file-earmark-person"></i> About Me</a></li>
@@ -34,170 +38,251 @@
                     <li><a href="gallery.html"><i class="bi bi-images"></i> Gallery</a></li>
                 </ul>
             </div>
-            <!-- social media icons -->
+            
             <div class="social-icons">
                 <ul>
-                    <li><a href="https://www.facebook.com/prasanth.nimmana" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#" target="_parent" ><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" ><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com/prasanth.nimmana" target="_blank"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" target="_parent"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                            target="_blank"><i class="fab fa-linkedin"></i></a></li>
                 </ul>
+            </div>
+        </div>
+    </nav> -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Basic Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-50" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5 text-center navul">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skill-set.html">Skill Set</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
             </div>
         </div>
     </nav>
 
-    <nav class="nav1">
-        <aside class="side-bar">
-            <ul>
-                <li> <a href="about-me.html"><i class="bi bi-file-earmark-person"></i> About Me</a></li>
-                <li><a href="resume.html"><i class="bi bi-file-word"></i> Resume</a></li>
-                <li><a href="skill-set.html"><i class="bi bi-stars"></i> Skill Set</a></li>
-                <li><a href="projects.html"><i class="bi bi-briefcase"></i> Projects</a></li>
-                <li><a href="projects.html"><i class="bi bi-person-workspace"></i> Internships</a></li>
-                <li><a href="gallery.html"><i class="bi bi-images"></i> Gallery</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://www.facebook.com/prasanth.nimmana" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#" target="_parent" ><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank" ><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-        </aside>
-    </nav>
 
+    <!-- <div class="block1"> -->
 
-    <div class="block">
-
-        <!-------------- project 1 ----------------------------->
-        <div class="project-container">
-            <div class="project-card">
-                <p class="pro">Project-1</p>
-                <h4><a href="projects.html" class="btn11">Home</a></h4>
-                <h1>Js Counter Application</h1>
-                <h1 class="counter" id="counter">0</h1>
-                <button class="btnp" onclick="decrement()">Decrement</button>
-                <button class="btnp" onclick="reset()">Reset</button>
-                <button class="btnp" onclick="increment()">Increment</button>
-            </div>
-        </div>
-
-
-        <!-- project 2 -->
-        <div class="project-container">
-            <div class="project-card">
-                <p class="pro">Project-2</p>
-                <h4><a href="projects.html" class="btn11">Home</a></h4>
-                <h1>Counting Numbers</h1>
-                <span id="value">0</span>
-                <button class="btnn decrease b111">decrease</button>
-                <button class="btnn reset b111">Reset</button>
-                <button class="btnn increase b111">increase</button>
-            </div>
-        </div>
-
-
-
-        <!-- project3 -->
-        <div class="project-container">
-            <div class="project-card3" id="changecolorof">
-                <p class="pro">Project-3</p>
-                <h4><a href="projects.html" class="home">Color Flipper</a></h4>
-                <ul class="links">
-                    <li><a href="projects.html">Simple</a></li>
-                    <li><a href="hex1.html">Hex</a></li>
-                </ul>
-                <div class="back">
-                    <h3>background color : <span class="color">white</span></h3>
-                    <button class="btn btn-hero b111" id="btn" onclick="changecolor()">click me</button>
+    <!-------------- project 1 ----------------------------->
+    <div class="container-fluid p-0">
+        <div class="row justify-content-around my-4 w-100">
+            <div class="col-lg-3 shadow rounded-4">
+                <div class="card-head">
+                    <h4 class="text-center">Project-1</h4>
+                </div>
+                <div class="card-body p-0">
+                    <div class="project-card">
+                        <h6><a href="projects.html"
+                                class="btn btn-info rounded-pill text-decoration-none px-1 py-0 ms-3">Home</a></h6>
+                        <h3 class="text-center">Js Counter Application</h3>
+                        <h1 class="text-center display-5 fw-bolder" id="counter">0</h1>
+                        <div class="d-flex justify-content-around mx-auto">
+                            <button class="btn btn-info rounded-pill px-1 py-0 mb-3"
+                                onclick="decrement()">Decrement</button>
+                            <button class="btn btn-info rounded-pill px-1 py-0 mb-3" onclick="reset()">Reset</button>
+                            <button class="btn btn-info rounded-pill px-1 py-0 mb-3"
+                                onclick="increment()">Increment</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-------------------- project 4 ------------------------->
-        <div class="project-container">
-            <div class="project-card">
-                <p class="pro1">Project-4</p>
-                <div class="title">
-                    <h5>Our Reviews</h5>
-                    <div class="underline"></div>
+            <!-- project 2 -->
+            <div class="col-lg-3 shadow rounded-4">
+                <div class="card-head">
+                    <h4 class="text-center">Project-2</h4>
                 </div>
-                <article class="review">
-                    <div class="img-container">
-                        <img src="person-1.jpeg" alt="image1" id="person-img">
-                    </div>
+                <div class="card-body p-0">
+                    <div class="project-card">
+                        <h6><a href="projects.html"
+                                class="btn btn-info rounded-pill  text-decoration-none px-1 py-0 ms-3">Home</a></h6>
+                        <h3 class="text-center">Counting Numbers</h3>
+                        <span class="text-center" id="value">0</span>
+                        <div class="d-flex justify-content-around mx-auto">
+                            <button class="btn btn-info rounded-pill px-1 py-0 mb-3 btnn decrease ">decrease</button>
+                            <button class="btn btn-info rounded-pill px-1 py-0 mb-3 btnn reset ">Reset</button>
+                            <button class="btn btn-info rounded-pill px-1 py-0 mb-3 btnn increase ">increase</button>
+                        </div>
 
-                    <div class="content-flex">
-                        <h4 id="author">Foreign Girl</h4>
-                        <p id="job">Customer Sales Executive</p>
-                        <p id="info">needs a strong logical code building,understand complex problems and communication
-                        </p>
                     </div>
-
-                    <div class="button-container">
-                        <button class="prev-btn">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                        <button class="next-btn">
-                            <i class="fas fa-chevron-right"></i>
-                        </button>
-                    </div>
-
-                </article>
+                </div>
             </div>
-        </div>
 
-        <!--================= project 5 =======================-->
-        <div class="project-container-5-6">
-            <div class="project-card-5">
-                <p class="pro1">Project-5</p>
-                <div class="container-c">
-                    <!-- analog clock -->
-                    <div class="clock">
-
-                        <div class="circle" id="sc" style="--clr:#04fc43;"><i></i></div>
-                        <div class="circle circle2" id="mn" style="--clr:#fee800;"><i></i></div>
-                        <div class="circle circle3" id="hr" style="--clr:#ff2972;"><i></i></div>
-
-                        <span style="--i:1;"><b>1</b></span>
-                        <span style="--i:2;"><b>2</b></span>
-                        <span style="--i:3;"><b>3</b></span>
-                        <span style="--i:4;"><b>4</b></span>
-                        <span style="--i:5;"><b>5</b></span>
-                        <span style="--i:6;"><b>6</b></span>
-                        <span style="--i:7;"><b>7</b></span>
-                        <span style="--i:8;"><b>8</b></span>
-                        <span style="--i:9;"><b>9</b></span>
-                        <span style="--i:10;"><b>10</b></span>
-                        <span style="--i:11;"><b>11</b></span>
-                        <span style="--i:12;"><b>12</b></span>
-                    </div>
-
-
-                    <!-- digital clock -->
-                    <div id="time">
-                        <div id="hours" style="--clr:#ff2972;">00</div>
-                        <div id="minutes" style="--clr:#fee800;">00</div>
-                        <div id="seconds" style="--clr:#04fc43;">00</div>
-                        <div id="ampm">AM</div>
+            <!-- project3 -->
+            <div class="col-lg-3 shadow rounded-4">
+                <div class="card-head">
+                    <h4 class="text-center">Project-3</h4>
+                </div>
+                <div class="card-body p-0">
+                    <div class="project-card3" id="changecolorof">
+                        <h6><a href="projects.html"
+                                class=" btn btn-info rounded-pill text-decoration-none px-1 py-0 ms-3">Color Flipper</a>
+                        </h6>
+                        <ul class="links d-flex justify-content-between">
+                            <li><a href="projects.html"
+                                    class="btn btn-info rounded-pill text-decoration-none px-1 py-0 ms-3">Simple</a>
+                            </li>
+                            <li><a href="hex1.html"
+                                    class="pe-2 me-4 btn btn-info rounded-pill text-decoration-none px-1 py-0 ms-3">Hex</a>
+                            </li>
+                        </ul>
+                        <div class="back text-center">
+                            <h3>background color : <span class="color">white</span></h3>
+                            <button class="btn btn-info rounded-pill px-1 py-0 mb-3" id="btn"
+                                onclick="changecolor()">click me</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <!-- project-6 -->
-        <div class="project-container-5-6">
-            <div class="project-card-6">
-                <p class="project-title">Project-6</p>
-                <div class="Textanimate">
-        
-                </div>
-            </div>
-        </div>
-
-
     </div>
 
 
 
 
+    <!-------------------- project 4 ------------------------->
+    <div class="container-fluid">
+        <div class="row justify-content-around">
+            <div class="col-lg-3 shadow rounded-4 m-1">
+                <div class="card-head">
+                    <h4 class="text-center">Project-4</h4>
+                </div>
+                <div class="card-body">
+                    <div class="container-c mx-sm-5">
+                        <!-- analog clock -->
+                        <div class="clock">
+
+                            <div class="circle" id="sc" style="--clr:#04fc43;"><i></i></div>
+                            <div class="circle circle2" id="mn" style="--clr:#fee800;"><i></i></div>
+                            <div class="circle circle3" id="hr" style="--clr:#ff2972;"><i></i></div>
+
+                            <span style="--i:1;"><b>1</b></span>
+                            <span style="--i:2;"><b>2</b></span>
+                            <span style="--i:3;"><b>3</b></span>
+                            <span style="--i:4;"><b>4</b></span>
+                            <span style="--i:5;"><b>5</b></span>
+                            <span style="--i:6;"><b>6</b></span>
+                            <span style="--i:7;"><b>7</b></span>
+                            <span style="--i:8;"><b>8</b></span>
+                            <span style="--i:9;"><b>9</b></span>
+                            <span style="--i:10;"><b>10</b></span>
+                            <span style="--i:11;"><b>11</b></span>
+                            <span style="--i:12;"><b>12</b></span>
+                        </div>
+                        <!-- digital clock -->
+                        <div id="time">
+                            <div id="hours" style="--clr:#ff2972;">00</div>
+                            <div id="minutes" style="--clr:#fee800;">00</div>
+                            <div id="seconds" style="--clr:#04fc43;">00</div>
+                            <div id="ampm">AM</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--================= project 5 =======================-->
+
+            <div class="col-lg-5 shadow rounded-4 m-1">
+                <div class="card-body">
+                    <div class="project-card">
+                        <h4 class="text-center">Project-5</h4>
+                        <div class="title">
+                            <h5>Our Reviews</h5>
+                            <div class="underline"></div>
+                        </div>
+                        <article class="review d-flex justify-content-between">
+                            <div class="img-container">
+                                <img src="person-1.jpeg" alt="image1" id="person-img">
+                            </div>
+                            <div class="text-center">
+                                <h4 id="author">Foreign Girl</h4>
+                                <p id="job">Customer Sales Executive</p>
+                                <p class="mt-5 mb-0" id="info">needs a strong logical code building,understand complex problems and
+                                    communication.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="card-footer d-flex justify-content-around">
+                    <button class="prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- project-6 -->
+            <div class="col-lg-3 shadow rounded-4 m-1">
+                <div class="card-head">
+                    <h4 class="text-center">Project-6</h4>
+                </div>
+                <div class="card-body">
+                    <div class="proje">
+                        <div class="Textanimate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div class="container my-4">
+        <div class="row px-3 justify-content-center m-auto ">
+            <div class="col-lg-2 border-bottom">
+                <div class="card-body ">
+                    <ul class="d-flex justify-content-center p-0 mb-0">
+                        <li><a href="https://www.facebook.com/prasanth.nimmana" target="_blank"><i
+                                    class="fab fa-facebook fs-3 px-2"></i></a></li>
+                        <li><a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
+                                target="_blank"><i class="fab fa-linkedin fs-3 px-2"></i></a></li>
+                        <li><a href="https://github.com/Nprash" target="_blank"><i
+                                    class="fa-brands fa-github  fs-3 px-2"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="whaticon">
+        <a href="https://wa.me/7609999606" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
     <script src="dom.js"></script>
     <script src="simple1.js"></script>
     <!-- <script src="hex1.js"></script> -->

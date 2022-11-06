@@ -147,7 +147,7 @@ const reviews = [
         img:
             "./gallery with/pr-gitar-5.jpg",
         text:
-            "to enhance overall strategic plan and direction of an organization. ",
+            "to enhance overall strategic plan and direction of an organization lor ipsum lorm. ",
     },
 ];
 
